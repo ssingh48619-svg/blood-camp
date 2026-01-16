@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Donor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .btn2 {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #e70b0b;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;   
+        display: block;
+        margin: 20px auto;
+    } 
+</style>
+<body>
+
+<header>
+    <h1>Blood Donation Website</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="find-donor.html">Find Donor</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<h2 class="page-title">Search Donor</h2>
+
+<select id="searchBlood" class="form-box">
+    <option>Select Blood Group</option>
+    <option>A+</option><option>A-</option>
+    <option>B+</option><option>B-</option>
+    <option>O+</option><option>O-</option>
+    <option>AB+</option><option>AB-</option>
+</select>
+
+<button class="btn2" onclick="findDonor()">Search</button>
+
+<div id="result" class="result-box"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
